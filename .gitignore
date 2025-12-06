@@ -1,2 +1,5 @@
 __pycache
 token.json
+.phi_env
+.env
+db.splite3
