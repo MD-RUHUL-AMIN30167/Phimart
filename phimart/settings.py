@@ -95,11 +95,11 @@ INTERNAL_IPS = [
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': config('dbname'),
-       'USER': config('user'),
-       'PASSWORD': config('password'),
-       'HOST': config('host'),
-       'PORT': config('port'),
+       'NAME': config('DB_NAME'),
+       'USER': config('DB_USER'),
+       'PASSWORD': config('DB_PASSWORD'),
+       'HOST': config('DB_HOST'),
+       'PORT': config('DB_PORT'),
    }
 }
 # Password validation
@@ -122,13 +122,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # configration for cloudness storages
 # Configuration       
-cloudinary.config( 
-    cloud_name = config('cloud_name'), 
-    api_key = config('api_key'), 
-    api_secret =config('api_secret'), 
+
+cloudinary.config(
+    cloud_name=config('CLOUDINARY_CLOUD_NAME'),
+    api_key=config('CLOUDINARY_API_KEY'),
+    api_secret=config('CLOUDINARY_API_SECRET'),
     secure=True
 )
-
 # Cloudenery media stroge setting
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # Internationalization
