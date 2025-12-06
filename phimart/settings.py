@@ -91,15 +91,14 @@ INTERNAL_IPS = [
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': config('DB_NAME'),
-       'USER': config('DB_USER'),
-       'PASSWORD': config('DB_PASSWORD'),
-       'HOST': config('DB_HOST'),
-       'PORT': config('DB_PORT'),
+       'NAME': config('db_name'),
+       'USER': config('db_user'),
+       'PASSWORD': config('db_password'),
+       'HOST': config('db_host'),
+       'PORT': config('db_port'),
    }
 }
 # Password validation
@@ -124,9 +123,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Configuration       
 
 cloudinary.config(
-    cloud_name=config('CLOUDINARY_CLOUD_NAME'),
-    api_key=config('CLOUDINARY_API_KEY'),
-    api_secret=config('CLOUDINARY_API_SECRET'),
+    cloud_name=config('cloudinary_cloud_name'),
+    api_key=config('cloudinary_api_key'),
+    api_secret=config('cloudinary_api_secret'),
     secure=True
 )
 # Cloudenery media stroge setting
