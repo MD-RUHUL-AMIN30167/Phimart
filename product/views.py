@@ -30,7 +30,7 @@ class ProductViewSet(ModelViewSet):
      - support serach by name ,description and category
      - support ordering by price and updated_at
     """
-    queryset=Product.objects.all()
+    
     serializer_class=ProductSerializer
     permission_classes=[AllowAny]
 
@@ -39,7 +39,8 @@ class ProductViewSet(ModelViewSet):
     search_fields=['name','description','category__name']
     ordering_fields=['price','updated_at']
     pagination_class=DefaultPagination
-
+    def get_queryset(self):
+        return Product.objects.prefetch_related('images').all()
     @swagger_auto_schema(
         operation_summary='Retrive all list of product',
        
