@@ -4,7 +4,7 @@ PhiMart is a fully functional e-commerce backend built using **Django REST Frame
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### 🛒 **E-commerce Modules**
 
@@ -14,16 +14,16 @@ PhiMart is a fully functional e-commerce backend built using **Django REST Frame
 * **Cart system** (Add/Remove/Update cart items)
 * **Orders** with status update
 
-### 🔐 **Authentication**
+###  **Authentication**
 
 * JWT Authentication using **Djoser**
 * Register, Login, Logout, Password Reset endpoints
 
-### 📄 **API Documentation**
+###  **API Documentation**
 
 * Fully auto-generated API docs using **drf_yasg (Swagger & Redoc)**
 
-### ⚙️ **Other Features**
+###  **Other Features**
 
 * Permissions and role-based access
 * Serializers and Model ViewSets
@@ -31,7 +31,7 @@ PhiMart is a fully functional e-commerce backend built using **Django REST Frame
 
 ---
 
-## 🗂️ Project Structure (Highlights)
+##  Project Structure (Highlights)
 
 ```
 phimart/
@@ -64,16 +64,16 @@ phimart/
 
 ---
 
-## 🔧 Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️ Clone the repository
 
 ```
 git clone https://github.com/yourusername/phimart.git
 cd phimart
 ```
 
-### 2️⃣ Create & activate virtual environment
+### 2️ Create & activate virtual environment
 
 ```
 python -m venv env
@@ -81,25 +81,25 @@ source env/bin/activate      # Linux/Mac
 env\Scripts\activate         # Windows
 ```
 
-### 3️⃣ Install dependencies
+### 3️ Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Apply migrations
+### 4️ Apply migrations
 
 ```
 python manage.py migrate
 ```
 
-### 5️⃣ Create superuser
+### 5️ Create superuser
 
 ```
 python manage.py createsuperuser
 ```
 
-### 6️⃣ Run the server
+### 6️ Run the server
 
 ```
 python manage.py runserver
@@ -107,7 +107,7 @@ python manage.py runserver
 
 ---
 
-## 🔑 Authentication (JWT + Djoser)
+##  Authentication (JWT + Djoser)
 
 Djoser provides the following routes:
 
@@ -127,9 +127,9 @@ Example login request:
 
 ---
 
-## 🛍️ API Endpoints
+##  API Endpoints
 
-### 📦 **Products**
+###  **Products**
 
 * `GET /api/products/`
 * `POST /api/products/`
@@ -137,19 +137,19 @@ Example login request:
 * `PUT /api/products/{id}/`
 * `DELETE /api/products/{id}/`
 
-### 🏷️ **Categories**
+###  **Categories**
 
 * `GET /api/categories/`
 * `POST /api/categories/`
 
-### 🛒 **Cart**
+###  **Cart**
 
 * `GET /api/carts/{cart_id}/items/`
 * `POST /api/carts/{cart_id}/items/`
 * `PATCH /api/carts/{cart_id}/items/{item_id}/`
 * `DELETE /api/carts/{cart_id}/items/{item_id}/`
 
-### 📦 **Orders**
+###  **Orders**
 
 * `GET /api/orders/`
 * `POST /api/orders/`
@@ -157,7 +157,7 @@ Example login request:
 
 ---
 
-## 📘 Swagger Documentation
+##  Swagger Documentation
 
 After running the server:
 
@@ -166,7 +166,7 @@ After running the server:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Django
@@ -177,19 +177,20 @@ After running the server:
 
 ---
 
-## 🤝 Contribution
+##  Contribution
 
 Feel free to fork the project and improve features.
 Pull requests are welcome!
 
 ---
 
-## 📜 License
+##  License
 
 This project is under the **MIT License**.
 
 ---
 
-## ⭐ Support
+##  Support
 
 If you like this project, give it a star ⭐ on GitHub!
+
